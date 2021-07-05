@@ -1,5 +1,11 @@
 package com.bridgelabz.MysqlDemo;
-
+/**
+ * Purpose:JDBC connection
+ * @author Sanyukta
+ * @version 1.0
+ * @since 5/07/2021
+ * 
+ */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -30,6 +36,10 @@ public class Demo {
 			e.printStackTrace();
 		}
 	}
+	/**
+	 * Retrieves an Enumeration with all of the currently loaded JDBC drivers to
+	 * which the current caller has access.
+	 */
 	private static void listDrivers() {
 		Enumeration<java.sql.Driver> driverList = DriverManager.getDrivers();
 		while (((Enumeration<?>) driverList).hasMoreElements()) {
